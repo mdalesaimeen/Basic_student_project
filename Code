@@ -1,0 +1,36 @@
+
+package com.mycompany.ulabstudent;
+
+public class Ulabstudent {
+
+    double id;
+    String Name;
+    String Email;
+    double cgpa;
+    String hometown;
+    
+    public Ulabstudent (double id,String Name,String Email,double cgpa,String hometown){
+        
+        this.id= id;
+        this.Name= Name;
+        this.Email= Email;
+        this.cgpa=cgpa;
+        this.hometown=hometown;
+      
+    }
+     void display(){
+     System.out.println ("ID: "+id);
+     System.out.println ("Name: "+Name);
+     System.out.println ("Email: "+Email);
+     System.out.println ("CGPA: "+cgpa);
+     System.out.println ("Home Town: "+hometown);  
+     }
+    
+    
+    
+    public static void main(String[] args) {
+        Ulabstudent stdunet1 = new Ulabstudent (223014173,"sanjid", "adajbbca",3.31,"cumilla");
+        
+        stdunet1.display();
+    }
+}
